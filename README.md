@@ -1,76 +1,76 @@
-# Cabinet Psihologic Virginia Crișan — Website
+# Virginia Crișan Psychology Practice — Website
 
-Site bilingv (română / engleză) pentru un cabinet de psihologie din Cluj-Napoca,
-cu sistem de administrare a articolelor (CMS) fără cod.
+A bilingual (Romanian / English) website for a psychology practice in Cluj-Napoca,
+featuring a no-code content management system for blog articles.
 
 🔗 **Live:** [virginiacrisan.ro](https://virginiacrisan.ro)
 
 ---
 
-## ✨ Funcționalități
+## ✨ Features
 
-- **Bilingv RO / EN** — comutare instantanee a întregului conținut printr-un toggle
-- **Design responsive** — optimizat pentru desktop, tabletă și mobil (cu meniu hamburger)
-- **Blog cu CMS** — articolele se administrează printr-un panou vizual (Decap CMS), fără cod
-- **Iconițe automate** — fiecare articol primește o iconiță în funcție de categorie
-- **Animații la scroll** — efecte fade-in subtile, cu respectarea `prefers-reduced-motion`
-- **Formular de contact** — cu protecție anti-spam (honeypot), integrabil cu Netlify Forms / Formspree
-- **SEO optimizat** — meta tags, Open Graph, date structurate (schema.org), sitemap, robots.txt
-- **Accesibilitate** — focus vizibil pe tastatură, contrast adecvat, markup semantic
+- **Bilingual RO / EN** — instant switching of all content via a language toggle
+- **Responsive design** — optimized for desktop, tablet, and mobile (with hamburger menu)
+- **Blog with CMS** — articles are managed through a visual panel (Decap CMS), no code required
+- **Automatic icons** — each article gets an icon based on its category
+- **Scroll animations** — subtle fade-in effects, respecting `prefers-reduced-motion`
+- **Contact form** — with anti-spam protection (honeypot), integrable with Netlify Forms / Formspree
+- **SEO optimized** — meta tags, Open Graph, structured data (schema.org), sitemap, robots.txt
+- **Accessibility** — visible keyboard focus, adequate contrast, semantic markup
 
 ---
 
-## 🛠️ Tehnologii
+## 🛠️ Tech Stack
 
-| Zonă | Tehnologie |
+| Area | Technology |
 |------|-----------|
-| Structură | HTML5 semantic |
-| Stilizare | CSS3 (Grid, Flexbox, custom properties, animații) |
-| Interactivitate | JavaScript vanilla (fără dependențe) |
-| Iconițe | SVG inline (stil Lucide) |
+| Structure | Semantic HTML5 |
+| Styling | CSS3 (Grid, Flexbox, custom properties, animations) |
+| Interactivity | Vanilla JavaScript (no dependencies) |
+| Icons | Inline SVG (Lucide style) |
 | CMS | Decap CMS (git-based) |
 | Hosting | Netlify |
-| Tipografie | Playfair Display + Inter (Google Fonts) |
+| Typography | Playfair Display + Inter (Google Fonts) |
 
 ---
 
-## 📁 Structura proiectului
+## 📁 Project Structure
 
 ```
 .
-├── index.html           # Pagina principală (single-page)
+├── index.html           # Main page (single-page)
 ├── admin/
-│   ├── index.html       # Panoul de administrare Decap CMS
-│   └── config.yml       # Configurarea colecțiilor CMS
+│   ├── index.html       # Decap CMS admin panel
+│   └── config.yml       # CMS collections configuration
 ├── data/
-│   └── articole.json    # Articolele de blog (editabile din CMS)
-├── media/               # Imagini (poze, articole)
-├── sitemap.xml          # Sitemap pentru SEO
-├── robots.txt           # Directive pentru motoarele de căutare
-└── GHID-INSTALARE.md    # Ghid pas-cu-pas de instalare și administrare
+│   └── articole.json    # Blog articles (editable from the CMS)
+├── media/               # Images (photos, articles)
+├── sitemap.xml          # Sitemap for SEO
+├── robots.txt           # Directives for search engines
+└── GHID-INSTALARE.md    # Step-by-step setup & administration guide (Romanian)
 ```
 
 ---
 
-## 🚀 Instalare & deployment
+## 🚀 Installation & Deployment
 
-Vezi ghidul complet în [`GHID-INSTALARE.md`](GHID-INSTALARE.md). Pe scurt:
+See the full guide in [`GHID-INSTALARE.md`](GHID-INSTALARE.md). In short:
 
-1. Urcă fișierele într-un repository GitHub
-2. Conectează repository-ul la Netlify (Import an existing project)
-3. Activează Netlify Identity + Git Gateway pentru panoul de admin
-4. (Opțional) Conectează un domeniu propriu
-
----
-
-## 📝 Administrarea conținutului
-
-Articolele se adaugă și se editează din panoul de admin disponibil la `/admin`,
-fără a atinge codul. Fiecare articol suportă conținut bilingv (RO/EN), categorie,
-rezumat și dată.
+1. Upload the files to a GitHub repository
+2. Connect the repository to Netlify (Import an existing project)
+3. Enable Netlify Identity + Git Gateway for the admin panel
+4. (Optional) Connect a custom domain
 
 ---
 
-## 📄 Licență
+## 📝 Content Management
 
-Proiect privat. Toate drepturile rezervate.
+Articles are added and edited through the admin panel available at `/admin`,
+without touching the code. Each article supports bilingual content (RO/EN),
+category, summary, and date.
+
+---
+
+## 📄 License
+
+Private project. All rights reserved.
