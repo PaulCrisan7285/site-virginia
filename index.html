@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO: TITLU ȘI DESCRIERE ── -->
+<title>Psiholog Cluj-Napoca | Virginia Crișan — Psihoterapeut & Terapie</title>
+<meta name="description" content="Cabinet psihologic Virginia Crișan, psiholog și psihoterapeut în Cluj-Napoca. Terapie individuală, de cuplu, anxietate, depresie și dezvoltare personală. Ședințe față în față și online.">
+<meta name="keywords" content="psiholog Cluj-Napoca, psihoterapeut Cluj, terapie Cluj, terapie de cuplu, anxietate, depresie, dezvoltare personală, ședințe online, Virginia Crișan">
+<meta name="author" content="Virginia Crișan">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://virginiacrisan.ro/">
+
+<!-- ── OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ── -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Psiholog Cluj-Napoca | Virginia Crișan — Psihoterapeut">
+<meta property="og:description" content="Psiholog și psihoterapeut în Cluj-Napoca. Terapie individuală, de cuplu, anxietate și dezvoltare personală. Ședințe față în față și online.">
+<meta property="og:url" content="https://virginiacrisan.ro/">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Cabinet Psihologic Virginia Crișan">
+<!-- Când ai poza, decomentează și pune calea reală: -->
+<!-- <meta property="og:image" content="https://virginiacrisan.ro/media/virginia.jpg"> -->
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Psiholog Cluj-Napoca | Virginia Crișan">
+<meta name="twitter:description" content="Psiholog și psihoterapeut în Cluj-Napoca. Terapie individuală, de cuplu și dezvoltare personală.">
+
+<!-- ── DATE STRUCTURATE (Schema.org) — ajută Google să înțeleagă că e un cabinet ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Psychologist",
+  "name": "Cabinet Psihologic Virginia Crișan",
+  "description": "Psiholog și psihoterapeut în Cluj-Napoca. Terapie individuală, de cuplu, anxietate, depresie și dezvoltare personală. Ședințe față în față și online.",
+  "url": "https://virginiacrisan.ro/",
+  "founder": {
+    "@type": "Person",
+    "name": "Virginia Crișan",
+    "jobTitle": "Psiholog & Psihoterapeut"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cluj-Napoca",
+    "addressCountry": "RO"
+  },
+  "areaServed": "Cluj-Napoca",
+  "availableLanguage": ["Română", "English"],
+  "knowsAbout": ["Terapie individuală", "Terapie de cuplu", "Anxietate", "Depresie", "Dezvoltare personală", "Consiliere adolescenți"]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1A1A2E;
+    --sand: #E8C5A0;
+    --cream: #F7F3EE;
+    --sage: #6B7F6E;
+    --sage-light: #A8BBAB;
+    --white: #FFFFFF;
+    --text-dark: #1A1A2E;
+    --text-mid: #4A5568;
+    --text-light: #718096;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  /* ── ANIMAȚIE FADE-IN LA SCROLL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Întârzieri scalonate pentru elemente în grup */
+  .reveal.d1 { transition-delay: 0.08s; }
+  .reveal.d2 { transition-delay: 0.16s; }
+  .reveal.d3 { transition-delay: 0.24s; }
+  .reveal.d4 { transition-delay: 0.32s; }
+  .reveal.d5 { transition-delay: 0.40s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── LANGUAGE TOGGLE ── */
+  .lang-toggle {
+    display: flex;
+    gap: 0;
+    background: rgba(26,26,46,0.35);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50px;
+    padding: 4px;
+    flex-shrink: 0;
+  }
+
+  .lang-btn {
+    padding: 6px 16px;
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: var(--white);
+    letter-spacing: 0.05em;
+  }
+
+  .lang-btn.active {
+    background: var(--white);
+    color: var(--navy);
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: linear-gradient(to bottom, rgba(26,26,46,0.55), rgba(26,26,46,0));
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav.scrolled {
+    background: rgba(26, 26, 46, 0.97);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-style: italic;
+    text-shadow: 0 1px 4px rgba(26,26,46,0.4);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    text-shadow: 0 1px 4px rgba(26,26,46,0.4);
+  }
+
+  .nav-links a:hover { color: var(--sand); }
+
+  /* ── HAMBURGER & MENIU MOBIL ── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px; height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 1500;
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-12px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .mobile-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+
+  .mobile-menu a:hover { color: var(--sand); }
+
+  .mobile-menu-close {
+    position: absolute;
+    top: 1.5rem; right: 1.75rem;
+    width: 44px; height: 44px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .mobile-menu-close:hover { transform: rotate(90deg); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-left {
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 4rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(107, 127, 110, 0.15);
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sand);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.6rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    color: var(--sand);
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.8;
+    max-width: 380px;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--sand);
+    color: var(--navy);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(232, 197, 160, 0.35);
+  }
+
+  .hero-right {
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 4rem;
+    position: relative;
+  }
+
+  .hero-illustration {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .hero-photo-frame {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-photo {
+    width: 100%;
+    max-width: 440px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 200px 200px 24px 24px;
+    box-shadow: 0 30px 60px rgba(26,26,46,0.18);
+  }
+
+  /* ── TRUST SIGNALS ── */
+  #trust {
+    background: var(--white);
+    border-top: 1px solid rgba(26,26,46,0.06);
+    border-bottom: 1px solid rgba(26,26,46,0.06);
+  }
+
+  .trust-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+
+  .trust-number {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+  }
+
+  .trust-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    letter-spacing: 0.04em;
+  }
+
+  .trust-divider {
+    width: 1px;
+    height: 48px;
+    background: rgba(26,26,46,0.1);
+    flex-shrink: 0;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    padding: 9.5rem 3rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .section-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 3.4vw, 3.2rem);
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-body {
+    font-size: 1rem;
+    color: var(--text-mid);
+    line-height: 1.85;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-card {
+    background: var(--navy);
+    border-radius: 24px;
+    padding: 3rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-card::after {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 12rem;
+    color: rgba(232,197,160,0.1);
+    position: absolute;
+    top: -2rem; left: 1.5rem;
+    line-height: 1;
+  }
+
+  .about-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--sand);
+    position: relative;
+    z-index: 1;
+  }
+
+  .about-credentials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .credential {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .credential-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--sand);
+    flex-shrink: 0;
+  }
+
+  /* ── SERVICES ── */
+  #services {
+    background: var(--navy);
+    padding: 9.5rem 3rem;
+  }
+
+  .services-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .services-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .services-header .section-eyebrow { color: var(--sand); }
+  .services-header .section-title { color: var(--white); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: background 0.3s, transform 0.3s;
+    cursor: default;
+  }
+
+  .service-card:hover {
+    background: rgba(255,255,255,0.09);
+    transform: translateY(-4px);
+  }
+
+  .service-icon {
+    width: 54px; height: 54px;
+    border-radius: 14px;
+    background: rgba(232,197,160,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-icon i {
+    width: 26px; height: 26px;
+    color: var(--sand);
+  }
+
+  .service-icon svg {
+    width: 26px; height: 26px;
+    stroke-width: 1.6;
+  }
+
+  .service-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+  }
+
+  .service-desc {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.75;
+  }
+
+  /* ── BLOG ── */
+  #blog {
+    padding: 9.5rem 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .blog-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  .blog-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sage);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--sage-light);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .blog-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(26,26,46,0.1);
+  }
+
+  .blog-thumb {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; height: 60px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.6);
+  }
+
+  .blog-icon svg {
+    width: 28px; height: 28px;
+    color: var(--sage);
+    stroke-width: 1.6;
+  }
+
+  .blog-body { padding: 1.5rem; }
+
+  .blog-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-excerpt {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--sage);
+    padding: 9.5rem 3rem;
+  }
+
+  .contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #contact .section-eyebrow { color: rgba(255,255,255,0.7); }
+  #contact .section-title { color: var(--white); }
+  #contact .section-body { color: rgba(255,255,255,0.8); margin-bottom: 3rem; }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  .form-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.2);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: background 0.2s;
+  }
+
+  .form-input::placeholder { color: rgba(255,255,255,0.6); }
+  .form-input:focus { background: rgba(255,255,255,0.28); }
+
+  textarea.form-input { min-height: 130px; resize: vertical; }
+
+  .btn-submit {
+    padding: 15px 40px;
+    background: var(--white);
+    color: var(--sage);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-self: center;
+    letter-spacing: 0.04em;
+  }
+
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--sand);
+    font-size: 1rem;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ── MODAL ARTICOL ── */
+  .articol-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 26, 46, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .articol-modal.open { display: flex; }
+
+  .modal-box {
+    background: var(--cream);
+    border-radius: 24px;
+    max-width: 680px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 3.5rem 3rem 3rem;
+    position: relative;
+    animation: modalIn 0.3s ease;
+  }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    width: 38px; height: 38px;
+    border: none;
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .modal-close:hover { transform: rotate(90deg); }
+
+  .modal-titlu {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--navy);
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-continut p {
+    font-size: 1rem;
+    color: var(--text-mid);
+    line-height: 1.85;
+    margin-bottom: 1.2rem;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+    .hero-left {
+      padding: 7rem 1.75rem 3rem;
+    }
+    .hero-left::before {
+      width: 200px; height: 200px;
+      bottom: -60px; right: -60px;
+      opacity: 0.6;
+    }
+    .hero-right {
+      padding: 2.5rem 1.75rem 3.5rem;
+      min-height: 320px;
+    }
+    .hero-photo-frame { max-width: 300px; }
+    .hero-illustration { max-width: 280px; }
+    .hero-photo { max-width: 300px; }
+    #about { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 1.75rem; }
+    .services-grid, .blog-grid { grid-template-columns: 1fr; }
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-right { gap: 0.75rem; }
+    .hamburger { display: flex; }
+    #services, #blog, #contact { padding: 5rem 1.5rem; }
+    .trust-inner { flex-wrap: wrap; gap: 1.5rem 0; padding: 2.5rem 1.75rem; }
+    .trust-item { flex-basis: 50%; }
+    .trust-divider { display: none; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    .blog-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Virginia Crișan</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about" data-ro="Despre" data-en="About">Despre</a></li>
+      <li><a href="#services" data-ro="Servicii" data-en="Services">Servicii</a></li>
+      <li><a href="#blog" data-ro="Resurse" data-en="Resources">Resurse</a></li>
+      <li><a href="#contact" data-ro="Contact" data-en="Contact">Contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('ro')">RO</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Meniu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MENIU MOBIL -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" onclick="toggleMenu()" aria-label="Închide">&times;</button>
+  <a href="#about" onclick="toggleMenu()" data-ro="Despre" data-en="About">Despre</a>
+  <a href="#services" onclick="toggleMenu()" data-ro="Servicii" data-en="Services">Servicii</a>
+  <a href="#blog" onclick="toggleMenu()" data-ro="Resurse" data-en="Resources">Resurse</a>
+  <a href="#contact" onclick="toggleMenu()" data-ro="Contact" data-en="Contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow" data-ro="Cabinet Psihologic · Cluj-Napoca" data-en="Psychology Practice · Cluj-Napoca">Cabinet Psihologic · Cluj-Napoca</p>
+    <h1 class="hero-name">Virginia<br>Crișan</h1>
+    <p class="hero-title" data-ro="Psiholog & Psihoterapeut" data-en="Psychologist & Psychotherapist">Psiholog & Psihoterapeut</p>
+    <p class="hero-tagline" data-ro="Un spațiu sigur în care să te descoperi, să crești și să găsești echilibrul de care ai nevoie." data-en="A safe space to discover yourself, grow, and find the balance you need.">
+      Un spațiu sigur în care să te descoperi, să crești și să găsești echilibrul de care ai nevoie.
+    </p>
+    <a href="#contact" class="btn-primary" data-ro="Programează o ședință" data-en="Book a Session">Programează o ședință</a>
+  </div>
+  <div class="hero-right">
+    <!--
+      ╔══════════════════════════════════════════════════════════════╗
+      ║  POZA VIRGINIEI — RECOMANDAT                                    ║
+      ║  Pentru cel mai bun efect, înlocuiește ilustrația de mai jos    ║
+      ║  cu o fotografie profesională a Virginiei. Pași:                ║
+      ║  1. Pune poza în folderul "media" (ex: media/virginia.jpg)      ║
+      ║  2. Șterge tot blocul <svg> de mai jos                          ║
+      ║  3. Decomentează linia <img> de sub el                          ║
+      ╚══════════════════════════════════════════════════════════════╝
+    -->
+    <div class="hero-photo-frame">
+    <svg class="hero-illustration" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background circle -->
+      <circle cx="210" cy="210" r="180" fill="#E8C5A0" opacity="0.25"/>
+      <!-- Large calm circle -->
+      <circle cx="210" cy="200" r="130" fill="#6B7F6E" opacity="0.18"/>
+      <!-- Abstract figure — seated person -->
+      <ellipse cx="210" cy="310" rx="60" ry="18" fill="#6B7F6E" opacity="0.25"/>
+      <!-- Body -->
+      <path d="M210 260 Q185 240 190 210 Q195 185 210 175 Q225 185 230 210 Q235 240 210 260Z" fill="#6B7F6E" opacity="0.55"/>
+      <!-- Head -->
+      <circle cx="210" cy="158" r="32" fill="#E8C5A0" opacity="0.75"/>
+      <!-- Leaves / organic shapes -->
+      <path d="M100 180 Q120 140 155 160 Q130 200 100 180Z" fill="#6B7F6E" opacity="0.35"/>
+      <path d="M320 220 Q340 180 310 160 Q295 200 320 220Z" fill="#6B7F6E" opacity="0.25"/>
+      <path d="M130 280 Q110 250 140 240 Q150 270 130 280Z" fill="#A8BBAB" opacity="0.4"/>
+      <path d="M290 290 Q320 270 310 250 Q290 265 290 290Z" fill="#A8BBAB" opacity="0.3"/>
+      <!-- Small dots -->
+      <circle cx="160" cy="120" r="8" fill="#E8C5A0" opacity="0.5"/>
+      <circle cx="270" cy="100" r="5" fill="#6B7F6E" opacity="0.4"/>
+      <circle cx="300" cy="140" r="10" fill="#E8C5A0" opacity="0.3"/>
+      <circle cx="130" cy="230" r="6" fill="#6B7F6E" opacity="0.3"/>
+      <!-- Concentric arcs (mindfulness rings) -->
+      <path d="M140 210 Q140 120 210 120 Q280 120 280 210" stroke="#6B7F6E" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="4 6"/>
+      <path d="M160 215 Q160 140 210 140 Q260 140 260 215" stroke="#E8C5A0" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="4 6"/>
+    </svg>
+    <!-- POZĂ REALĂ: decomentează linia de mai jos și șterge <svg> de sus -->
+    <!-- <img class="hero-photo" src="media/virginia.jpg" alt="Virginia Crișan"> -->
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SIGNALS -->
+<section id="trust">
+  <div class="trust-inner">
+    <div class="trust-item reveal d1">
+      <span class="trust-number">8+</span>
+      <span class="trust-label" data-ro="ani de experiență" data-en="years of experience">ani de experiență</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item reveal d2">
+      <span class="trust-number">500+</span>
+      <span class="trust-label" data-ro="ședințe susținute" data-en="sessions held">ședințe susținute</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item reveal d3">
+      <span class="trust-number" data-ro="Atestat" data-en="Licensed">Atestat</span>
+      <span class="trust-label" data-ro="Colegiul Psihologilor" data-en="College of Psychologists">Colegiul Psihologilor</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item reveal d4">
+      <span class="trust-number" data-ro="Online & Fizic" data-en="Online & In-person">Online & Fizic</span>
+      <span class="trust-label" data-ro="ședințe flexibile" data-en="flexible sessions">ședințe flexibile</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div>
+    <p class="section-eyebrow" data-ro="Despre mine" data-en="About me">Despre mine</p>
+    <h2 class="section-title" data-ro="Terapie centrată pe omul din fața mea" data-en="Therapy centred on the person in front of me">Terapie centrată pe omul din fața mea</h2>
+    <p class="section-body" data-ro="Sunt Virginia Crișan, psiholog și psihoterapeut în Cluj-Napoca, cu experiență în lucrul cu adulți, cupluri și adolescenți. Cred că fiecare persoană are resursele necesare pentru a depăși dificultățile vieții — rolul meu este să te însoțesc în acel proces." data-en="I am Virginia Crișan, a psychologist and psychotherapist in Cluj-Napoca, experienced in working with adults, couples, and adolescents. I believe every person holds the inner resources needed to overcome life's difficulties — my role is to accompany you through that process.">
+      Sunt Virginia Crișan, psiholog și psihoterapeut în Cluj-Napoca, cu experiență în lucrul cu adulți, cupluri și adolescenți. Cred că fiecare persoană are resursele necesare pentru a depăși dificultățile vieții — rolul meu este să te însoțesc în acel proces.
+    </p>
+    <p class="section-body" data-ro="Ședințele au loc atât față în față, cât și online, într-un spațiu confidențial, non-judicativ și cald." data-en="Sessions take place both in person and online, in a confidential, non-judgmental, and warm space.">
+      Ședințele au loc atât față în față, cât și online, într-un spațiu confidențial, non-judicativ și cald.
+    </p>
+  </div>
+  <div class="about-card">
+    <p class="about-quote" data-ro="&ldquo;Curajul nu înseamnă că nu ți-e frică. Înseamnă că mergi înainte chiar și atunci când ți-e frică.&rdquo;" data-en="&ldquo;Courage doesn't mean you're not afraid. It means you move forward even when you are.&rdquo;">
+      &ldquo;Curajul nu înseamnă că nu ți-e frică. Înseamnă că mergi înainte chiar și atunci când ți-e frică.&rdquo;
+    </p>
+    <div class="about-credentials">
+      <div class="credential"><span class="credential-dot"></span><span data-ro="Psiholog atestat — Colegiul Psihologilor din România" data-en="Licensed Psychologist — Romanian College of Psychologists">Psiholog atestat — Colegiul Psihologilor din România</span></div>
+      <div class="credential"><span class="credential-dot"></span><span data-ro="Formare în psihoterapie integrativă" data-en="Training in integrative psychotherapy">Formare în psihoterapie integrativă</span></div>
+      <div class="credential"><span class="credential-dot"></span><span data-ro="Ședințe față în față & online" data-en="In-person & online sessions">Ședințe față în față & online</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-inner">
+    <div class="services-header">
+      <p class="section-eyebrow" data-ro="Ce ofer" data-en="What I offer">Ce ofer</p>
+      <h2 class="section-title" data-ro="Servicii de terapie" data-en="Therapy Services">Servicii de terapie</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg></div>
+        <h3 class="service-name" data-ro="Terapie Individuală" data-en="Individual Therapy">Terapie Individuală</h3>
+        <p class="service-desc" data-ro="Spațiu personal pentru a explora gânduri, emoții și comportamente. Lucrăm împreună pentru a depăși anxietatea, depresia, trauma sau blocajele personale." data-en="Personal space to explore thoughts, emotions, and behaviours. We work together to overcome anxiety, depression, trauma, or personal blocks.">Spațiu personal pentru a explora gânduri, emoții și comportamente. Lucrăm împreună pentru a depăși anxietatea, depresia, trauma sau blocajele personale.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg></div>
+        <h3 class="service-name" data-ro="Terapie de Cuplu" data-en="Couples Therapy">Terapie de Cuplu</h3>
+        <p class="service-desc" data-ro="Îmbunătățirea comunicării, rezolvarea conflictelor și reconectarea. Un loc sigur pentru amândoi să fiți auziți și înțeleși." data-en="Improving communication, resolving conflict, and reconnecting. A safe place for both of you to be heard and understood.">Îmbunătățirea comunicării, rezolvarea conflictelor și reconectarea. Un loc sigur pentru amândoi să fiți auziți și înțeleși.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></div>
+        <h3 class="service-name" data-ro="Dezvoltare Personală" data-en="Personal Development">Dezvoltare Personală</h3>
+        <p class="service-desc" data-ro="Explorarea potențialului tău, clarificarea valorilor și construirea unei vieți mai autentice și mai împlinite." data-en="Exploring your potential, clarifying your values, and building a more authentic and fulfilling life.">Explorarea potențialului tău, clarificarea valorilor și construirea unei vieți mai autentice și mai împlinite.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg></div>
+        <h3 class="service-name" data-ro="Anxietate & Depresie" data-en="Anxiety & Depression">Anxietate & Depresie</h3>
+        <p class="service-desc" data-ro="Tehnici bazate pe dovezi pentru a gestiona și reduce simptomele, recâștigând echilibrul și bucuria în viața de zi cu zi." data-en="Evidence-based techniques to manage and reduce symptoms, reclaiming balance and joy in everyday life.">Tehnici bazate pe dovezi pentru a gestiona și reduce simptomele, recâștigând echilibrul și bucuria în viața de zi cu zi.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 class="service-name" data-ro="Consiliere Adolescenți" data-en="Adolescent Counselling">Consiliere Adolescenți</h3>
+        <p class="service-desc" data-ro="Suport specializat pentru tineri care traversează provocările adolescenței — identitate, relații, presiunea școlară și anxietate." data-en="Specialist support for young people navigating the challenges of adolescence — identity, relationships, academic pressure, and anxiety.">Suport specializat pentru tineri care traversează provocările adolescenței — identitate, relații, presiunea școlară și anxietate.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
+        <h3 class="service-name" data-ro="Ședințe Online" data-en="Online Sessions">Ședințe Online</h3>
+        <p class="service-desc" data-ro="Toate serviciile disponibile și online — aceeași calitate, intimitate și confidențialitate, din confortul casei tale." data-en="All services available online — the same quality, intimacy, and confidentiality, from the comfort of your home.">Toate serviciile disponibile și online — aceeași calitate, intimitate și confidențialitate, din confortul casei tale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / RESOURCES -->
+<section id="blog">
+  <div class="blog-header">
+    <div>
+      <p class="section-eyebrow" data-ro="Resurse" data-en="Resources">Resurse</p>
+      <h2 class="section-title" data-ro="Articole & Perspective" data-en="Articles & Insights">Articole & Perspective</h2>
+    </div>
+    <a href="#" class="blog-link" data-ro="Vezi toate →" data-en="View all →">Vezi toate →</a>
+  </div>
+  <div class="blog-grid" id="blog-grid">
+    <!-- Articolele sunt încărcate automat din data/articole.json -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-eyebrow" data-ro="Hai să vorbim" data-en="Let's talk">Hai să vorbim</p>
+    <h2 class="section-title" data-ro="Programează o ședință" data-en="Book a Session">Programează o ședință</h2>
+    <p class="section-body" data-ro="Primul pas este cel mai greu. Trimite-mi un mesaj și stabilim împreună un moment potrivit pentru tine." data-en="The first step is the hardest. Send me a message and we'll find a time that works for you.">Primul pas este cel mai greu. Trimite-mi un mesaj și stabilim împreună un moment potrivit pentru tine.</p>
+    <!--
+      ╔══════════════════════════════════════════════════════════════════╗
+      ║  FORMULAR DE CONTACT — CUM ÎL ACTIVEZI                              ║
+      ║                                                                    ║
+      ║  Formularul este configurat pentru AMBELE servicii. Alege unul:    ║
+      ║                                                                    ║
+      ║  ── OPȚIUNEA A: NETLIFY FORMS (dacă pui site-ul pe Netlify) ──      ║
+      ║  Nu trebuie să faci NIMIC. Funcționează automat când urci pe       ║
+      ║  Netlify. Vezi mesajele în panoul Netlify → Forms.                 ║
+      ║  Ca să primești email: Netlify → Forms → Settings →                ║
+      ║  Form notifications → adaugi adresa de email.                      ║
+      ║                                                                    ║
+      ║  ── OPȚIUNEA B: FORMSPREE (funcționează oriunde) ──                ║
+      ║  1. Creează cont gratuit pe formspree.io                           ║
+      ║  2. Creezi un formular nou și primești un cod (ex: xpzgkdab)       ║
+      ║  3. Înlocuiește "YOUR_FORM_ID" mai jos cu codul tău                ║
+      ║  4. Șterge atributele "data-netlify" și "netlify-honeypot"         ║
+      ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <form class="contact-form"
+          name="contact"
+          method="POST"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          onsubmit="handleSubmit(event)">
+
+      <!-- Câmp ascuns necesar pentru Netlify Forms -->
+      <input type="hidden" name="form-name" value="contact">
+      <!-- Capcană anti-spam (invizibilă pentru oameni) -->
+      <p style="display:none;"><label>Nu completa: <input name="bot-field"></label></p>
+
+      <div class="form-row">
+        <input class="form-input" type="text" name="nume" required data-placeholder-ro="Numele tău" data-placeholder-en="Your name" placeholder="Numele tău">
+        <input class="form-input" type="email" name="email" required data-placeholder-ro="Email" data-placeholder-en="Email" placeholder="Email">
+      </div>
+      <textarea class="form-input" name="mesaj" required data-placeholder-ro="Spune-mi câteva cuvinte despre tine și ce te-a adus aici..." data-placeholder-en="Tell me a few words about yourself and what brought you here..." placeholder="Spune-mi câteva cuvinte despre tine și ce te-a adus aici..."></textarea>
+      <button type="submit" class="btn-submit" data-ro="Trimite mesajul" data-en="Send message">Trimite mesajul</button>
+    </form>
+  </div>
+</section>
+
+<!-- MODAL ARTICOL -->
+<div id="articol-modal" class="articol-modal" onclick="if(event.target===this)inchideArticol()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="inchideArticol()" aria-label="Închide">&times;</button>
+    <h2 id="modal-titlu" class="modal-titlu"></h2>
+    <div id="modal-continut" class="modal-continut"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Cabinet Psihologic Virginia Crișan</span>
+  <span class="footer-copy" data-ro="© 2026 · Toate drepturile rezervate" data-en="© 2026 · All rights reserved">© 2026 · Toate drepturile rezervate</span>
+</footer>
+
+<script>
+  // ── ÎNCĂRCARE ARTICOLE ──
+  // Articolele sunt salvate de Decap CMS în data/articole.json
+  let articole = [];
+  const culoriThumb = ['#EEF4EF', '#F5EEF5', '#FFF3E8', '#EEF1F7', '#F7EEF0'];
+
+  // Iconițe SVG (stil line, asemănătoare cu cele de la servicii)
+  const iconiteArticol = {
+    'cloud-rain': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>',
+    'heart': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
+    'sprout': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg>',
+    'brain': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/></svg>',
+    'sun': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>',
+    'leaf': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>',
+    'message-circle': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>'
+  };
+
+  // Alege iconița potrivită după categoria articolului
+  function alegeIconita(art) {
+    const cat = (art.categorie_ro || '').toLowerCase();
+    if (cat.includes('anxiet') || cat.includes('depres') || cat.includes('stres')) return 'cloud-rain';
+    if (cat.includes('relați') || cat.includes('relat') || cat.includes('cuplu') || cat.includes('iubire')) return 'heart';
+    if (cat.includes('dezvolt') || cat.includes('crește') || cat.includes('creste')) return 'sprout';
+    if (cat.includes('minte') || cat.includes('gând') || cat.includes('gand') || cat.includes('terapie')) return 'brain';
+    if (cat.includes('comunic') || cat.includes('vorb')) return 'message-circle';
+    // implicit: o frunză (calm, neutru)
+    return 'leaf';
+  }
+
+  async function incarcaArticole() {
+    try {
+      const res = await fetch('data/articole.json?t=' + Date.now());
+      if (!res.ok) throw new Error('no file');
+      const data = await res.json();
+      articole = data.articole || [];
+    } catch (err) {
+      // Dacă fișierul nu există încă, folosim articole demo
+      articole = articoleDemo;
+    }
+    randeazaArticole();
+  }
+
+  function randeazaArticole() {
+    const grid = document.getElementById('blog-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    // Sortăm după dată, cele mai noi primele
+    const sortate = [...articole].sort((a, b) => new Date(b.data || 0) - new Date(a.data || 0));
+
+    sortate.forEach((art, i) => {
+      const card = document.createElement('div');
+      card.className = 'blog-card';
+      card.style.cursor = 'pointer';
+      const culoare = culoriThumb[i % culoriThumb.length];
+      const titlu = currentLang === 'ro' ? art.titlu_ro : (art.titlu_en || art.titlu_ro);
+      const rezumat = currentLang === 'ro' ? art.rezumat_ro : (art.rezumat_en || art.rezumat_ro);
+      const categorie = currentLang === 'ro' ? art.categorie_ro : (art.categorie_en || art.categorie_ro);
+      const iconita = iconiteArticol[alegeIconita(art)] || iconiteArticol['leaf'];
+
+      card.innerHTML = `
+        <div class="blog-thumb" style="background:${culoare};"><span class="blog-icon">${iconita}</span></div>
+        <div class="blog-body">
+          <span class="blog-tag">${categorie || ''}</span>
+          <h3 class="blog-title">${titlu || ''}</h3>
+          <p class="blog-excerpt">${rezumat || ''}</p>
+        </div>`;
+      card.onclick = () => deschideArticol(art);
+      grid.appendChild(card);
+    });
+  }
+
+  function deschideArticol(art) {
+    const titlu = currentLang === 'ro' ? art.titlu_ro : (art.titlu_en || art.titlu_ro);
+    const continut = currentLang === 'ro' ? art.continut_ro : (art.continut_en || art.continut_ro);
+    document.getElementById('modal-titlu').textContent = titlu || '';
+    // Transformăm paragrafe simple separate prin linii goale
+    const html = (continut || '').split(/\n\s*\n/).map(p => `<p>${p.trim()}</p>`).join('');
+    document.getElementById('modal-continut').innerHTML = html;
+    document.getElementById('articol-modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function inchideArticol() {
+    document.getElementById('articol-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Articole demo (folosite doar dacă data/articole.json nu există încă)
+  const articoleDemo = [
+    { emoji:'🌿', data:'2026-01-10', categorie_ro:'Anxietate', categorie_en:'Anxiety',
+      titlu_ro:'Cum să gestionezi atacurile de panică în 5 pași', titlu_en:'How to manage panic attacks in 5 steps',
+      rezumat_ro:'Tehnici practice pe care le poți aplica imediat când anxietatea devine copleșitoare.', rezumat_en:'Practical techniques you can apply immediately when anxiety becomes overwhelming.',
+      continut_ro:'Acesta este un articol demonstrativ. După ce conectezi panoul de admin, articolele scrise de tine vor apărea aici.\n\nPoți scrie pe mai multe paragrafe, iar fiecare paragraf va fi afișat frumos.', continut_en:'This is a demo article. Once you connect the admin panel, your articles will appear here.' },
+    { emoji:'💜', data:'2026-01-05', categorie_ro:'Relații', categorie_en:'Relationships',
+      titlu_ro:'Comunicarea în cuplu: ce îi face pe parteneri să se simtă auziți', titlu_en:'Communication in couples',
+      rezumat_ro:'Ascultarea activă și empatia sunt instrumente mai puternice decât orice argument câștigat.', rezumat_en:'Active listening and empathy are more powerful than any argument won.',
+      continut_ro:'Articol demonstrativ.', continut_en:'Demo article.' },
+    { emoji:'🌅', data:'2026-01-01', categorie_ro:'Dezvoltare', categorie_en:'Growth',
+      titlu_ro:'De ce terapia nu înseamnă că ești slab', titlu_en:"Why therapy doesn't mean you're weak",
+      rezumat_ro:'A cere ajutor este unul dintre cele mai curajoase lucruri pe care le poți face.', rezumat_en:'Asking for help is one of the most courageous things you can do.',
+      continut_ro:'Articol demonstrativ.', continut_en:'Demo article.' }
+  ];
+
+  // ── LANGUAGE SWITCH ──
+  let currentLang = 'ro';
+
+  function setLang(lang) {
+    currentLang = lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+
+    document.querySelectorAll('[data-ro]').forEach(el => {
+      el.innerHTML = el.getAttribute(`data-${lang}`);
+    });
+
+    document.querySelectorAll('[data-placeholder-ro]').forEach(el => {
+      el.placeholder = el.getAttribute(`data-placeholder-${lang}`);
+    });
+
+    document.documentElement.lang = lang;
+    randeazaArticole();
+  }
+
+  // ── MENIU MOBIL ──
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isOpen = menu.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  // ── NAV SCROLL ──
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── FORM SUBMIT ──
+  // Trimite efectiv datele formularului.
+  // - Pe Netlify: lasă codul așa cum e, Netlify interceptează automat.
+  // - Pe Formspree: asigură-te că ai pus codul tău în action="...".
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('.btn-submit');
+    const originalText = currentLang === 'ro' ? 'Trimite mesajul' : 'Send message';
+
+    btn.textContent = currentLang === 'ro' ? 'Se trimite...' : 'Sending...';
+    btn.disabled = true;
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        btn.textContent = currentLang === 'ro' ? 'Mesaj trimis ✓' : 'Message sent ✓';
+        btn.style.background = '#E8C5A0';
+        btn.style.color = '#1A1A2E';
+        form.reset();
+      } else {
+        throw new Error('Submit failed');
+      }
+    } catch (err) {
+      btn.textContent = currentLang === 'ro' ? 'Eroare — încearcă din nou' : 'Error — try again';
+      btn.style.background = '#C0594B';
+      btn.style.color = '#FFFFFF';
+    }
+
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 3500);
+  }
+
+  // ── PORNIRE ──
+  incarcaArticole();
+
+  // ── ICONIȚE LUCIDE ──
+
+  // ── ANIMAȚIE FADE-IN LA SCROLL ──
+  // Adăugăm automat clasa .reveal pe elementele principale
+  function pregatesteReveal() {
+    const tinte = [
+      '#about > div',
+      '.about-card',
+      '.services-header',
+      '.service-card',
+      '.blog-header',
+      '.blog-card',
+      '.contact-inner > *'
+    ];
+    let counter = {};
+    tinte.forEach(sel => {
+      document.querySelectorAll(sel).forEach((el, i) => {
+        if (!el.classList.contains('reveal')) {
+          el.classList.add('reveal');
+          // întârziere scalonată pentru grupuri
+          const delayClass = 'd' + Math.min((i % 5) + 1, 5);
+          el.classList.add(delayClass);
+        }
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  }
+
+  // Așteptăm puțin ca articolele să se încarce, apoi pregătim animațiile
+  setTimeout(() => {
+    pregatesteReveal();
+    }, 300);
+</script>
+</body>
+</html>

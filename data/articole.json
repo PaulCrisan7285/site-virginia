@@ -1,0 +1,40 @@
+{
+  "articole": [
+    {
+      "emoji": "🌿",
+      "data": "2026-01-10",
+      "categorie_ro": "Anxietate",
+      "categorie_en": "Anxiety",
+      "titlu_ro": "Cum să gestionezi atacurile de panică în 5 pași",
+      "titlu_en": "How to manage panic attacks in 5 steps",
+      "rezumat_ro": "Tehnici practice și accesibile pe care le poți aplica imediat când anxietatea devine copleșitoare.",
+      "rezumat_en": "Practical, accessible techniques you can apply immediately when anxiety becomes overwhelming.",
+      "continut_ro": "Atacurile de panică pot fi extrem de copleșitoare, dar există tehnici simple care te pot ajuta să le gestionezi în momentul în care apar.\n\nPrimul pas este respirația controlată: inspiră lent pe nas timp de 4 secunde, ține aerul 4 secunde, apoi expiră lent pe gură timp de 6 secunde. Repetă de câteva ori.\n\nAl doilea pas este tehnica 5-4-3-2-1: numește 5 lucruri pe care le vezi, 4 pe care le poți atinge, 3 pe care le auzi, 2 pe care le miroși și 1 pe care îl poți gusta. Această tehnică te readuce în prezent.\n\nAmintește-ți că un atac de panică, deși înspăimântător, nu este periculos și va trece.",
+      "continut_en": "Panic attacks can be overwhelming, but there are simple techniques that can help you manage them when they arise.\n\nThe first step is controlled breathing: inhale slowly through your nose for 4 seconds, hold for 4 seconds, then exhale slowly through your mouth for 6 seconds. Repeat several times.\n\nRemember that a panic attack, though frightening, is not dangerous and will pass."
+    },
+    {
+      "emoji": "💜",
+      "data": "2026-01-05",
+      "categorie_ro": "Relații",
+      "categorie_en": "Relationships",
+      "titlu_ro": "Comunicarea în cuplu: ce îi face pe parteneri să se simtă auziți",
+      "titlu_en": "Communication in couples: what makes partners feel truly heard",
+      "rezumat_ro": "Ascultarea activă și empatia sunt instrumente mai puternice decât orice argument câștigat.",
+      "rezumat_en": "Active listening and empathy are more powerful tools than any argument won.",
+      "continut_ro": "În relațiile de cuplu, modul în care comunicăm contează adesea mai mult decât ceea ce comunicăm.\n\nAscultarea activă înseamnă să fii prezent cu adevărat, fără să te gândești deja la răspunsul tău. Înseamnă să reflectezi ceea ce a spus partenerul tău, pentru a-i arăta că ai înțeles.\n\nEmpatia nu înseamnă să fii de acord cu tot, ci să recunoști și să validezi emoțiile celuilalt.",
+      "continut_en": "In couple relationships, how we communicate often matters more than what we communicate.\n\nActive listening means being truly present, without already thinking about your response."
+    },
+    {
+      "emoji": "🌅",
+      "data": "2026-01-01",
+      "categorie_ro": "Dezvoltare",
+      "categorie_en": "Growth",
+      "titlu_ro": "De ce terapia nu înseamnă că ești slab",
+      "titlu_en": "Why therapy doesn't mean you're weak",
+      "rezumat_ro": "A cere ajutor este unul dintre cele mai curajoase lucruri pe care le poți face pentru tine însuți.",
+      "rezumat_en": "Asking for help is one of the most courageous things you can do for yourself.",
+      "continut_ro": "Există încă un stigmat în jurul terapiei, ca și cum a căuta ajutor ar fi un semn de slăbiciune. Adevărul este exact opusul.\n\nA recunoaște că ai nevoie de sprijin și a face pasul de a-l căuta cere curaj și conștientizare de sine. Terapia este un spațiu de creștere, nu un loc doar pentru momente de criză.",
+      "continut_en": "There is still a stigma around therapy, as if seeking help were a sign of weakness. The truth is the exact opposite.\n\nTherapy is a space for growth, not just a place for moments of crisis."
+    }
+  ]
+}

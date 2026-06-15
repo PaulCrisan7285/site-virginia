@@ -1,0 +1,45 @@
+# ╔════════════════════════════════════════════════════════════════╗
+# ║  CONFIGURARE PANOU ADMIN — Cabinet Psihologic Virginia Crișan    ║
+# ║                                                                  ║
+# ║  IMPORTANT: Înlocuiește "NUME-UTILIZATOR/NUME-REPO" mai jos       ║
+# ║  cu datele tale reale de pe GitHub.                              ║
+# ║  Exemplu: paulcrisan/site-virginia                              ║
+# ╚════════════════════════════════════════════════════════════════╝
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Limba panoului de admin
+locale: 'ro'
+
+# Unde se salvează imaginile încărcate
+media_folder: "media"
+public_folder: "/media"
+
+collections:
+  - name: "articole"
+    label: "Articole de blog"
+    label_singular: "Articol"
+    # Toate articolele într-un singur fișier JSON
+    files:
+      - name: "lista_articole"
+        label: "Lista de articole"
+        file: "data/articole.json"
+        fields:
+          - name: "articole"
+            label: "Articole"
+            label_singular: "Articol"
+            widget: "list"
+            summary: "{{fields.titlu_ro}}"
+            fields:
+              - { name: "emoji", label: "Emoji (opțional, nefolosit)", widget: "string", default: "🌿", required: false, hint: "Nu mai e necesar — iconița se alege automat după categorie." }
+              - { name: "data", label: "Data publicării", widget: "datetime", date_format: "DD-MM-YYYY", time_format: false, format: "YYYY-MM-DD" }
+              - { name: "categorie_ro", label: "Categorie (RO)", widget: "string", hint: "Ex: Anxietate, Relații, Dezvoltare" }
+              - { name: "categorie_en", label: "Categorie (EN)", widget: "string", required: false }
+              - { name: "titlu_ro", label: "Titlu (Română)", widget: "string" }
+              - { name: "titlu_en", label: "Titlu (Engleză)", widget: "string", required: false }
+              - { name: "rezumat_ro", label: "Rezumat scurt (Română)", widget: "text", hint: "1-2 propoziții care apar pe card" }
+              - { name: "rezumat_en", label: "Rezumat scurt (Engleză)", widget: "text", required: false }
+              - { name: "continut_ro", label: "Conținut articol (Română)", widget: "text", hint: "Textul complet. Lasă o linie goală între paragrafe." }
+              - { name: "continut_en", label: "Conținut articol (Engleză)", widget: "text", required: false }
